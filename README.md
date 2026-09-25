@@ -1,6 +1,6 @@
 # COMP535 PA1 组员共享版
 
-这里是 PA1 的完整提交项目。Java 源码、7 个路由器配置文件和 Maven 配置在 `comp535_sketch_code/` 中；该目录内的 `README.md` 是教授提供的英文说明，保持原样。根目录的 `AI_Usage_Report.md` 是生成式 AI 使用说明。
+这里是 PA1 的完整提交项目。Java 源码、7 个路由器配置文件和 Maven 配置在 `comp535_sketch_code/` 中；该目录内的 `README.md` 是教授提供的英文说明，保持原样。根目录的 `AI_Usage_Report.md` 记录当前版本开发过程中的生成式 AI 使用情况；组员应按自己的实际使用情况核对报告内容。
 
 ## 已实现的功能
 
