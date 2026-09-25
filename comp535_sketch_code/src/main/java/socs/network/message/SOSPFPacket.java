@@ -1,0 +1,39 @@
+package socs.network.message;
+
+import java.io.*;
+import java.util.Vector;
+import java.util.concurrent.atomic.AtomicInteger;
+
+public class SOSPFPacket implements Serializable {
+
+  //for inter-process communication
+  public String srcProcessIP;
+  public short srcProcessPort;
+  // Full source port; the original short cannot represent values above 32767.
+  public int srcProcessPortFull;
+
+  //simulated IP address
+  public String srcIP;
+  public String dstIP;
+
+  //common header
+  public short sospfType; //0 - HELLO, 1 - LinkState Update, 2 - Application Message
+  // PA1 HELLO phase: 0 attach request, 1 initial, 2 reply, 3 final.
+  public short helloStage;
+  public String routerID;
+
+  //used by HELLO message to identify the sender of the message
+  //e.g. when router A sends HELLO to its neighbor, it has to fill this field with its own
+  //simulated IP address
+  public String neighborID; //neighbor's simulated IP address
+
+  // Cost supplied with a PA1 attach request.
+  public short linkWeight;
+
+  //used by LSAUPDATE
+  public Vector<LSA> lsaArray = null;
+
+  //used by Application Message
+  public String message; //user inputted message payload
+
+}

@@ -1,0 +1,11 @@
+# Maven build output
+target/
+
+# Local editor files
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
